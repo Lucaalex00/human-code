@@ -6,7 +6,7 @@ Perché ci si mette sempre un’ora a scegliere cosa guardare la sera? Certo è 
 ////////////////////////////////////////////////////
 
 ****************
-Context:
+# Context:
 Netflix sulla TV in camera da letto
 Sono "NOME-PERSONA"
 Il gruppo è Dispari
@@ -15,62 +15,62 @@ Salotto e camera da letto sono comunicanti
 Il telecomando è nella stanza
 ****************
 
-Step-1: Andare in Camera da letto
+# Step-1: Andare in Camera da letto
 
-        -SE la porta NON è chiusa
+        - SE la porta NON è chiusa
             -Attraversi porta
             -Vai allo step successivo
         
-        -ALTRIMENTI
+        - ALTRIMENTI
             -Apri porta
             -Ripeti da capo lo step
             
-Step-2: Accendere TV
+# Step-2: Accendere TV
 
-        -Cerca telecomando
+        - Cerca telecomando
             -Scorro oggetti in stanza FINTANTO CHE non lo trovo
-        -Prendo telecomando
-        -Punto verso TV
-        -Accendo TV  
-        -Vai allo step successivo
+        - Prendo telecomando
+        - Punto verso TV
+        - Accendo TV  
+        - Vai allo step successivo
 
-Step-3: Avvio NETFLIX
+# Step-3: Avvio NETFLIX
 
-        -Cerco App NETFLIX
+        - Cerco App NETFLIX
             -Scorro App FINTANTO CHE non trovo NETFLIX
-        -Avvio App NETFLIX
-        -Accedere al proprio profilo
+        - Avvio App NETFLIX
+        - Accedere al proprio profilo
             -Scorro profili FINTANTO CHE non trovo L'account di Stanislav
-        -Vai allo step successivo
+        - Vai allo step successivo
 
-Step-4: Scelta film/serie
+# Step-4: Scelta film/serie
 
-        -scelta visione
-            -SE ho almeno due ore 
+        - scelta visione
+            - SE ho almeno due ore 
                 -scelgo un film
-            -ALTRIMENTI
+            - ALTRIMENTI
                 -scelgo l'episodio di una serie
-        -vai allo step successivo
+        - vai allo step successivo
 
-Step-5: Scelta genere
+# Step-5: Scelta genere
 
-        -ogniuno aggiunge alla lista: "Genere_scelto" il genere che preferisce
-            -SE un genere si ripete almeno 1 volta più degli altri generi
+        - ogniuno aggiunge alla lista: "Genere_scelto" il genere che preferisce
+            - SE un genere si ripete almeno 1 volta più degli altri generi
                 -Scegli quel genere
-            -ALTRIMENTI
+            - ALTRIMENTI
                 -rimuovi da lista: "Genere_Scelto" tutti i generi n voti più vicini a 1 (es 7 persone con votazione 2+2+2+1 rimuovi solo 1)
-        -Ripetere FINCHè Lista: "Genere_scelto" = 1
-        -Vai allo step successivo
+        - Ripetere FINCHè Lista: "Genere_scelto" = 1
+        - Vai allo step successivo
 
-Step-6: Scelta titolo
+# Step-6: Scelta titolo
 
-        -ogniuno aggiunge alla lista: "Titolo_scelto" il Titolo che preferisce
+        - ognuno aggiunge alla lista: "Titolo_scelto" il Titolo che preferisce
             -SE un Titolo si ripete almeno 1 volta più degli altri Titolo
                 -Scegli quel Titolo
-            -ALTRIMENTI
-                -rimuovi da lista: "Titolo_Scelto" tutti i Titolo n voti più vicini a 1 (es 7 persone con votazione 2+2+2+1 rimuovi solo 1)
-        -Ripetere FINCHè Lista: "Titolo_scelto" = 1
-        -Premi play
+            - ALTRIMENTI
+                - rimuovi da lista: "Titolo_Scelto" tutti i Titolo n voti più vicini a 1 (es 7 persone con votazione 2+2+2+1 rimuovi solo 1)
+        - Ripetere FINCHè Lista: "Titolo_scelto" = 1
+        - Premi play
 
 
 /////////////////////////////////////////////////////////////////
